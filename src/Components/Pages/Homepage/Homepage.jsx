@@ -13,7 +13,7 @@ const Homepage = () => {
       <span className={styles.blackHole}></span>
       <article className={`${styles.article} ${isAnimating ? styles.animate : ''}`}>
         <section className={styles.arrowBox}>
-            <p className={styles.presentationText}> Bonjour, qu'est-ce que tu fais là ? Tu veux en savoir plus sur la nouvelle édition de Starfinder ?
+            <p className={styles.presentationText}> Yoooo, qu'est-ce que tu fais là ? Tu veux en savoir plus sur la nouvelle édition de Starfinder ?
             T'es au bon endroit, ouais au milieu de l'espace ! C'est simple sur
             <img className={styles.logoInText} src="/Assets/starfinder-fr-logo1.webp" alt="starfinder-fr logo" />
             tu trouveras une traduction du contenu lié au playtest
