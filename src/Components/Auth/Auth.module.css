@@ -1,0 +1,99 @@
+.mainContainer {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  min-height: 100vh;
+  background: url('/Assets/background-space6.webp') center/cover no-repeat;
+}
+
+.articleContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+  max-width: 400px;
+  height: auto;
+  margin-top: 4rem;
+  padding: 0.5rem 0.5rem 0.5rem 0.5rem;
+  background-color: var(--coolgrey);
+  color: var(--neonblue);
+  border: 4px solid var(--neonviolet);
+  border-radius: 10px;
+}
+
+.formTitle {
+  margin: 0 0 1rem 0;
+  font-weight: 900;
+}
+
+.formContainer {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.formInput {
+  align-items: center;
+  box-sizing: border-box;
+  height: 1.5rem;
+  min-width: 250px;
+  width: 100%;
+  color: var(--coolgrey);
+  font-family: Kode Mono;
+}
+
+.submitButton {
+  display: inline-flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  height: 2rem;
+  margin-top: 0.25rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  font-family: Kode Mono;
+  font-size: 1.25rem;
+  color: var(--coolgrey);
+  background-color: var(--whiteblue);
+  border-radius: 4px;
+  box-shadow: var(--neonblue) 0 2px 4px, var(--neonblue) 0 7px 13px -3px;
+  transition: box-shadow .15s, transform .15s;
+}
+
+.submitButton:focus {
+  box-shadow: var(--whiteblue) 0 0 0 1.5px inset, var(--darkblue) 0 2px 4px, var(--coolgrey) 0 7px 13px -3px, var(--whiteblue) 0 -3px 0 inset;
+}
+
+.submitButton:hover {
+  box-shadow: var(--darkblue) 0 4px 8px, var(--coolgrey) 0 7px 13px -3px, var(--whiteblue) 0 -3px 0 inset;
+}
+
+.submitButton:active {
+  box-shadow: var(--whiteblue) 0 3px 7px inset;
+}
+
+.errorMessage {
+  display: flex;
+}
+
+.forgotPassword {
+  margin-bottom: 0;
+  margin-top: 1rem;
+  font-size: 0.75rem;
+  text-align: right;
+  cursor: pointer;
+}
+
+
+.resendLink {
+  font-family: Kode Mono;
+  font-size: 1rem;
+  background: none;
+  color: var(--neonviolet);
+  text-decoration: underline;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+}

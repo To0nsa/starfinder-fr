@@ -1,0 +1,230 @@
+.container {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: url('/Assets/background-space4.webp') center/cover no-repeat;
+}
+
+.article {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.arrowBox {
+  position: relative;
+  max-width: 400px;
+  height: auto;
+  margin-top: 2rem;
+  padding: 1.5rem;
+  background-color: var(--coolgrey);
+  color: var(--neonblue);
+  border: 4px solid indigo;
+  border-radius: 10px;
+}
+
+.arrowBox:after,
+.arrowBox:before {
+  position: absolute;
+  height: 0;
+  width: 0;
+  top: 100%;
+  left: 20%;
+  border: solid transparent;
+  content: "";
+  pointer-events: none;
+}
+
+.arrowBox:after {
+  border-color: rgba(136, 183, 213, 0);
+  border-top-color: var(--coolgrey);
+  border-width: 30px;
+  margin-left: -30px;
+}
+
+.arrowBox:before {
+  border-color: rgba(194, 225, 245, 0);
+  border-top-color: indigo;
+  border-width: 36px;
+  margin-left: -36px;
+}
+
+.presentationText {
+  display: block;
+  text-align: justify;
+}
+
+.animate .presentationText {
+  display: none;
+}
+
+.cryForHelp {
+  display: none;
+}
+
+.animate .cryForHelp {
+  display: block;
+  white-space: nowrap;
+  overflow: hidden;
+  font-size: 4rem;
+  animation: typeOut 2s steps(10, end) forwards;
+}
+
+.logoInText {
+  position: relative;
+  top: 8px;
+  width: 120px;
+  height: auto;
+  margin: -12px -8px 0 0;
+  padding: 0 4px 0 2px;
+}
+
+.spaceAdventurer {
+  position: relative;
+  z-index: 2; 
+  max-width: 600px;
+  height: auto;
+}
+
+.blackHole {
+  position: absolute;
+  z-index: 1;
+  width: 60px;
+  height: 60px; 
+  background-color: black;
+  border-radius: 50%;
+}
+
+.animateButton {
+  position: absolute;
+  z-index: 3;
+  bottom: 80px; 
+  right: 20px; 
+  max-width: 8rem;
+  cursor: pointer;
+  font-size: 16px;
+  letter-spacing: 2px;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #000;
+  border: 3px solid;
+  padding: 0.25em 0.5em;
+  box-shadow: 1px 1px 0px 0px, 2px 2px 0px 0px, 3px 3px 0px 0px, 4px 4px 0px 0px, 5px 5px 0px 0px;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.animateButton:active {
+  transition: 0.3s;
+  right: 5px;
+  box-shadow: 0px 0px 0px 0px;
+}
+
+.spaceAdventurerContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 600px;
+  position: relative;
+}
+
+.animate {
+  animation: suckIntoBlackHole 5s forwards;
+  z-index: 2;
+}
+
+@keyframes suckIntoBlackHole {
+  0% {
+    opacity: 1;
+    transform: scale(1) rotate(0deg);
+    filter: blur(0px);
+  }
+
+  50% {
+    opacity: 0.5;
+    filter: blur(2px);
+  }
+
+  100% {
+    opacity: 0;
+    transform: scale(0) rotate(720deg);
+    filter: blur(5px);
+  }
+}
+
+@keyframes typeOut {
+  from { width: 0; }
+  to { width: 100%; }
+}
+
+@media (max-width: 680px) {
+  .article {
+    width: 100%;
+  }
+  .spaceAdventurer {
+    width: 450px;
+    position: absolute;
+    top: 20px;
+  }
+  .animateButton {
+    bottom: 180px;
+  }
+}
+
+@media (max-width: 530px) {
+  .spaceAdventurer {
+    width: 400px;
+  }
+  .animateButton {
+    bottom: 230px;
+  }
+}
+
+@media (max-width: 530px) {
+  .spaceAdventurer {
+    width: 350px;
+  }
+  .animateButton {
+    bottom: 280px;
+  }
+  .blackHole {
+    width: 50px;
+    height: 50px; 
+  }
+}
+
+@media (max-width: 430px) {
+  .spaceAdventurer {
+    width: 300px;
+  }
+  .blackHole {
+    width: 40px;
+    height: 40px; 
+  }
+}
+
+@media (max-width: 380px) {
+  .spaceAdventurer {
+    width: 250px;
+  }
+  .blackHole {
+    width: 35px;
+    height: 35px; 
+  }
+}
+
+@media (max-width: 350px) {
+  .spaceAdventurer {
+    width: 230px;
+  }
+  .blackHole {
+    width: 20px;
+    height: 20px;
+    left: 80px;
+  }
+}

@@ -1,0 +1,68 @@
+.mainContainer {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  background: url('/Assets/background-space4.webp') center/cover no-repeat;
+}
+
+.previousButton {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 1rem;
+  color: var(--neonblue)
+}
+
+.articleContainer {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  width: 90%;
+  max-width: 800px;
+  height: auto;
+  padding: 1rem 1rem;
+  margin: 3rem 0;
+  background-color: var(--coolgrey);
+  color: var(--neonblue);
+  border: 4px solid var(--neonviolet);
+  border-radius: 10px;
+}
+
+.articleContent {
+  color: var(--whiteblue);
+}
+
+.articleContent p {
+  display: flex;
+  justify-content: center; 
+  flex-wrap: wrap; 
+  gap: 0.6rem; 
+}
+
+.postInfo {
+  font-size: 1rem;
+  color: var(--neonblue);
+}
+
+@media (max-width: 490px) {
+  .articleContent img {
+   width: 300px;
+  }
+  .articleContainer {
+    padding: 1rem 1rem; 
+  }
+ }
+ 
+ @media (max-width: 395px) {
+   .articleContent img {
+    width: 260px;
+   }
+  }
+ 
+  @media (max-width: 355px) {
+   .articleContent img {
+    width: 220px;
+   }
+  }

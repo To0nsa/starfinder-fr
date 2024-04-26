@@ -1,0 +1,175 @@
+.mainContainer {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  min-height: 100vh;
+  background: url('/Assets/background-space2.webp') center/cover no-repeat;
+}
+
+.articleContainer {
+  display: flex;
+  align-items: center;
+  position: relative;
+  width: 500px;
+  height: auto;
+  margin-top: 4rem;
+  padding: 0.5rem 0.5rem 1.5rem 0.5rem;
+  background-color: var(--coolgrey);
+  color: var(--neonblue);
+  border: 4px solid var(--neonviolet);
+  border-radius: 10px;
+}
+
+.profileImageContainer {
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin-right: 1rem;
+  cursor: pointer;
+}
+
+.profileImage {
+  border: 2px solid var(--bluesky);
+  width: 100%;
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+}
+
+.noProfileImage {
+  border: 2px solid var(--bluesky);
+  width: 100%;
+  width: 120px;
+  height: 120px;
+  background: var(--semi-transparent); 
+  color: var(--whiteblue);
+  border-radius: 50%;
+}
+
+.imageOverlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: var(--semi-transparent); 
+  color: var(--whiteblue);
+  border-radius: 50%;
+}
+
+.modal {
+  position: fixed;
+  max-width: 360px;
+  top: 50%;
+  left: 50%;
+  padding: 1rem;
+  z-index: 2;
+  background-color: var(--coolgrey);
+  color: var(--neonblue);
+  border: 4px solid var(--neonblue);
+  border-radius: 10px;
+  transform: translate(-50%, -50%);
+}
+
+.closeButton {
+  position: absolute;
+  top: -1rem;
+  right: 0.5rem;
+  cursor: pointer;
+  font-size: 3rem;
+  color: var(--skyblue)
+}
+
+.editButton {
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
+}
+
+.editIcon {
+  width: 1rem;
+  height: auto;
+  color: var(--neonviolet);
+  align-items: center;
+}
+
+.deleteAccountButton {
+  display: inline-flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  height: auto;
+  margin-top: 0.25rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  font-family: Kode Mono;
+  font-size: 1.25rem;
+  color: var(--coolgrey);
+  background-color: var(--whiteblue);
+  border-radius: 4px;
+  box-shadow: var(--neonblue) 0 2px 4px, var(--neonblue) 0 7px 13px -3px;
+  transition: box-shadow .15s, transform .15s;
+}
+
+.deleteAccountButton:focus {
+  box-shadow: var(--whiteblue) 0 0 0 1.5px inset, var(--darkblue) 0 2px 4px, var(--coolgrey) 0 7px 13px -3px, var(--whiteblue) 0 -3px 0 inset;
+}
+
+.deleteAccountButton:hover {
+  box-shadow: var(--darkblue) 0 4px 8px, var(--coolgrey) 0 7px 13px -3px, var(--whiteblue) 0 -3px 0 inset;
+}
+
+.deleteAccountButton:active {
+  box-shadow: var(--whiteblue) 0 3px 7px inset;
+}
+
+@media (max-width: 610px) {
+  .articleContainer {
+    width: 90%; 
+    margin-top: 2rem; 
+    padding: 0.25rem; 
+  }
+
+  .profileImageContainer, .profileImage, .imageOverlay {
+    width: 100px; 
+    height: 100px;
+  }
+
+  .modal {
+    margin-left: 29px;
+    width: 220px;
+    height: auto;
+  }
+
+  .closeButton {
+    font-size: 3rem; 
+  }
+}
+
+@media (max-width: 385px) {
+  .articleContainer {
+    width: 90%; 
+    margin-top: 2rem; 
+    padding: 0.25rem; 
+  }
+
+  .profileImageContainer, .profileImage, .imageOverlay {
+    width: 80px; 
+    height: 80px;
+  }
+
+  .deleteAccountButton {
+    font-size: 1rem;
+  }
+
+  .modal {
+    margin-left: 29px;
+    width: 180px;
+    height: auto;
+  }
+
+  .closeButton {
+    font-size: 3rem; 
+  }
+}

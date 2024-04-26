@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Kode+Mono:wght@400..700&display=swap');
+
+:root {
+  /* Color Palette */
+  --darkblue: #071952;
+  --skyblue: #088395;
+  --neonblue: #66d9e0;
+  --neonblue-semi-transparent: rgba(102, 217, 224, 0.8);
+  --whiteblue: #CDF5FD;
+  --coolgrey: #2c2f33;
+  --neonviolet: #6420AA;
+  --semi-transparent: rgba(0, 0, 0, 0.5);
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Kode Mono, Roboto, "Helvetica Neue", sans-serif;
+  font-size: 16px;
+}
+
+a {
+  color: var(--neonviolet);
+  text-decoration-color: var(--neonviolet);
+}
+

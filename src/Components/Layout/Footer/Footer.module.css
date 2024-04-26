@@ -1,0 +1,91 @@
+/*FOOTER*/
+.footer {
+  display: block;
+  text-align: center;
+  padding-top: 1rem;
+  background-color: var(--darkblue);
+}
+
+.footerContainer {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+}
+
+.footerArticle {
+  display: flex;
+  flex-direction: column;
+  color: var(--neonblue)
+}
+
+.topLeftFlexbox,
+.topCenterFlexbox,
+.topRightFlexbox {
+  flex: 1;
+  width: 100%;
+  height: auto;
+  font-size: 1.25rem;
+}
+
+.topFlexContainer {
+  flex: 1;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.bottomFlexbox {
+  font-size: 0.75rem;
+  flex: 1;
+  height: auto;
+  margin: 1rem;
+}
+
+.footerLogo {
+  width: 200px;
+}
+
+.footerButton {
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
+  color: var(--skyblue);
+}
+
+.footerIcon {
+  width: 3.5rem;
+  height: auto;
+  color: var(--skyblue);
+  align-items: center;
+}
+
+.footerButton:active {
+  filter: drop-shadow(2px 0 0 var(--neonblue));
+}
+
+.footerHr {
+  margin-bottom: 1rem;
+  border-color: var(--neonviolet);
+  border-style: solid;
+  border-width: 1px 0 0 0;
+  height: 0;
+}
+
+@media screen and (max-width: 540px) {
+  .footerLogo {
+    width: 100%;
+    transition: 0.3s;
+  }
+}
+
+@media screen and (max-width: 460px) {
+  .topLeftFlexbox {
+    display: none;
+  }
+
+  .topCenterFlexbox {
+    padding: 0.5rem;
+  }
+}
