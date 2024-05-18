@@ -188,11 +188,10 @@ header {
   background-color: var(--whiteblue);
 }
 
-/*Responsivness*/
 @media screen and (max-width: 1300px) {
   .titleHeader {
     font-size: 1.5rem;
-    max-width: 230px;
+    max-width: 280px;
     transition: 0.3s;
   }
 

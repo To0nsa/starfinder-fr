@@ -1,0 +1,23 @@
+.mySwiper {
+  width: 100%;
+  max-width: 1200px;
+  height: auto;
+  margin: 0 auto;
+  padding: 20px 0;
+}
+
+.swiper-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 300px;
+  height: auto;
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+@media (max-width: 1290px) {
+  .mySwiper {
+    display: none;
+  } 
+}

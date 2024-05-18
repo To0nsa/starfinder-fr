@@ -1,5 +1,6 @@
 .container {
   display: flex;
+  flex-direction: column;
   position: relative;
   justify-content: center;
   align-items: center;
@@ -7,7 +8,7 @@
   background: url('/Assets/background-space4.webp') center/cover no-repeat;
 }
 
-.article {
+.joke {
   display: flex;
   position: relative;
   justify-content: center;
@@ -93,6 +94,7 @@
 .blackHole {
   position: absolute;
   z-index: 1;
+  top: 420px;
   width: 60px;
   height: 60px; 
   background-color: black;
@@ -102,7 +104,7 @@
 .animateButton {
   position: absolute;
   z-index: 3;
-  bottom: 80px; 
+  top: 640px; 
   right: 20px; 
   max-width: 8rem;
   cursor: pointer;
@@ -138,6 +140,10 @@
   z-index: 2;
 }
 
+.swiper {
+  align-items: center;
+}
+
 @keyframes suckIntoBlackHole {
   0% {
     opacity: 1;
@@ -171,26 +177,17 @@
     position: absolute;
     top: 20px;
   }
-  .animateButton {
-    bottom: 180px;
-  }
 }
 
 @media (max-width: 530px) {
   .spaceAdventurer {
     width: 400px;
   }
-  .animateButton {
-    bottom: 230px;
-  }
 }
 
 @media (max-width: 530px) {
   .spaceAdventurer {
     width: 350px;
-  }
-  .animateButton {
-    bottom: 280px;
   }
   .blackHole {
     width: 50px;
